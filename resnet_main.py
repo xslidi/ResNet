@@ -29,14 +29,14 @@ from datetime import datetime
 FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string('dataset', 'cifar10', 'cifar10 or cifar100.')
 tf.app.flags.DEFINE_string('mode', 'train', 'train or eval.')
-tf.app.flags.DEFINE_string('train_data_path', '/home/wangmou/tmp/cifar10_data',
+tf.app.flags.DEFINE_string('train_data_path', '/home/tmp/cifar10_data',
                            'Filepattern for training data.')
-tf.app.flags.DEFINE_string('eval_data_path', '/home/wangmou/tmp/cifar10_data',
+tf.app.flags.DEFINE_string('eval_data_path', '/home/tmp/cifar10_data',
                            'Filepattern for eval data')
 tf.app.flags.DEFINE_integer('image_size', 32, 'Image side length.')
-tf.app.flags.DEFINE_string('train_dir', '/home/wangmou/tmp/ResNet_train',
+tf.app.flags.DEFINE_string('train_dir', '/home/tmp/ResNet_train',
                            'Directory to keep training outputs.')
-tf.app.flags.DEFINE_string('eval_dir', '/home/wangmou/tmp/ResNet_eval',
+tf.app.flags.DEFINE_string('eval_dir', '/home/tmp/ResNet_eval',
                            'Directory to keep eval outputs.')
 tf.app.flags.DEFINE_integer('eval_batch_count', 50,
                             'Number of batches to eval.')
@@ -44,7 +44,7 @@ tf.app.flags.DEFINE_bool('eval_once', False,
                          'Whether evaluate the model only once.')
 tf.app.flags.DEFINE_bool('use_fp16', False,
                          'Whether use float16 to train the model.')
-tf.app.flags.DEFINE_string('log_root', '/home/wangmou/tmp/ResNet_train',
+tf.app.flags.DEFINE_string('log_root', '/home/tmp/ResNet_train',
                            'Directory to keep the checkpoints. Should be a '
                            'parent directory of FLAGS.train_dir/eval_dir.')
 tf.app.flags.DEFINE_integer('num_gpus', 1,
